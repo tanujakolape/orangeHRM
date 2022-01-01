@@ -1,0 +1,515 @@
+<html>
+<head>
+<title>TestNG:  Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 18 11:20:28 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>32 seconds (32096 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.orangehrm_hybrid_framework.testCase.LoginTC.setUP()'><b>setUP</b><br>Test class: com.orangehrm_hybrid_framework.testCase.LoginTC<br>Parameters: Chrome</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=94.0.4606.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADVAIT-PC&apos;, ip: &apos;192.168.42.34&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C4B3C3+2470851]
+	Ordinal0 [0x00BE56A1+2053793]
+	Ordinal0 [0x00AF2438+1057848]
+	Ordinal0 [0x00AE5774+1005428]
+	Ordinal0 [0x00AE53B6+1004470]
+	Ordinal0 [0x00AE4AFA+1002234]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEE524+1041700]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEC4FA+1033466]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEA319+1024793]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AE963C+1021500]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00ADF41D+979997]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE3590+996752]
+	Ordinal0 [0x00AE3329+996137]
+	Ordinal0 [0x00AF3650+1062480]
+	Ordinal0 [0x00B3AAAA+1354410]
+	Ordinal0 [0x00B3974A+1349450]
+	Ordinal0 [0x00B355AB+1332651]
+	Ordinal0 [0x00B12104+1188100]
+	Ordinal0 [0x00B12F59+1191769]
+	GetHandleVerifier [0x00DD1716+1549414]
+	GetHandleVerifier [0x00E7C207+2248535]
+	GetHandleVerifier [0x00CD676B+521403]
+	GetHandleVerifier [0x00CD5809+517465]
+	Ordinal0 [0x00BEA7DD+2074589]
+	Ordinal0 [0x00BEEB98+2091928]
+	Ordinal0 [0x00BEECD2+2092242]
+	Ordinal0 [0x00BF8581+2131329]
+	BaseThreadInitThunk [0x75E133CA+18]
+	RtlInitializeExceptionChain [0x770C9ED2+99]
+	RtlInitializeExceptionChain [0x770C9EA5+54]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.orangehrm_hybrid_framework.testBase.TestBase.setUP(TestBase.java:47)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1320388319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320388319'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=94.0.4606.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADVAIT-PC&apos;, ip: &apos;192.168.42.34&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C4B3C3+2470851]
+	Ordinal0 [0x00BE56A1+2053793]
+	Ordinal0 [0x00AF2438+1057848]
+	Ordinal0 [0x00AE5774+1005428]
+	Ordinal0 [0x00AE53B6+1004470]
+	Ordinal0 [0x00AE4AFA+1002234]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEE524+1041700]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEC4FA+1033466]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEA319+1024793]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AE963C+1021500]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00ADF41D+979997]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE3590+996752]
+	Ordinal0 [0x00AE3329+996137]
+	Ordinal0 [0x00AF3650+1062480]
+	Ordinal0 [0x00B3AAAA+1354410]
+	Ordinal0 [0x00B3974A+1349450]
+	Ordinal0 [0x00B355AB+1332651]
+	Ordinal0 [0x00B12104+1188100]
+	Ordinal0 [0x00B12F59+1191769]
+	GetHandleVerifier [0x00DD1716+1549414]
+	GetHandleVerifier [0x00E7C207+2248535]
+	GetHandleVerifier [0x00CD676B+521403]
+	GetHandleVerifier [0x00CD5809+517465]
+	Ordinal0 [0x00BEA7DD+2074589]
+	Ordinal0 [0x00BEEB98+2091928]
+	Ordinal0 [0x00BEECD2+2092242]
+	Ordinal0 [0x00BF8581+2131329]
+	BaseThreadInitThunk [0x75E133CA+18]
+	RtlInitializeExceptionChain [0x770C9ED2+99]
+	RtlInitializeExceptionChain [0x770C9EA5+54]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.orangehrm_hybrid_framework.testBase.TestBase.setUP(TestBase.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>com.orangehrm_hybrid_framework.testCase.LoginTC@3427b02d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.orangehrm_hybrid_framework.testCase.LoginTC.tearDown()'><b>tearDown</b><br>Test class: com.orangehrm_hybrid_framework.testCase.LoginTC</td>
+<td></td>
+<td>-1639806660</td>
+<td>com.orangehrm_hybrid_framework.testCase.LoginTC@3427b02d</td></tr>
+<tr>
+<td title='com.orangehrm_hybrid_framework.testCase.LoginTC.tearDown()'><b>tearDown</b><br>Test class: com.orangehrm_hybrid_framework.testCase.LoginTC</td>
+<td></td>
+<td>-1639806660</td>
+<td>com.orangehrm_hybrid_framework.testCase.LoginTC@3427b02d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.orangehrm_hybrid_framework.testCase.LoginTC.LoginToOrangeHrmTC002()'><b>LoginToOrangeHrmTC002</b><br>Test class: com.orangehrm_hybrid_framework.testCase.LoginTC</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=94.0.4606.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADVAIT-PC&apos;, ip: &apos;192.168.42.34&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C4B3C3+2470851]
+	Ordinal0 [0x00BE56A1+2053793]
+	Ordinal0 [0x00AF2438+1057848]
+	Ordinal0 [0x00AE5774+1005428]
+	Ordinal0 [0x00AE53B6+1004470]
+	Ordinal0 [0x00AE4AFA+1002234]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEE524+1041700]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEC4FA+1033466]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEA319+1024793]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AE963C+1021500]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00ADF41D+979997]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE3590+996752]
+	Ordinal0 [0x00AE3329+996137]
+	Ordinal0 [0x00AF3650+1062480]
+	Ordinal0 [0x00B3AAAA+1354410]
+	Ordinal0 [0x00B3974A+1349450]
+	Ordinal0 [0x00B355AB+1332651]
+	Ordinal0 [0x00B12104+1188100]
+	Ordinal0 [0x00B12F59+1191769]
+	GetHandleVerifier [0x00DD1716+1549414]
+	GetHandleVerifier [0x00E7C207+2248535]
+	GetHandleVerifier [0x00CD676B+521403]
+	GetHandleVerifier [0x00CD5809+517465]
+	Ordinal0 [0x00BEA7DD+2074589]
+	Ordinal0 [0x00BEEB98+2091928]
+	Ordinal0 [0x00BEECD2+2092242]
+	Ordinal0 [0x00BF8581+2131329]
+	BaseThreadInitThunk [0x75E133CA+18]
+	RtlInitializeExceptionChain [0x770C9ED2+99]
+	RtlInitializeExceptionChain [0x770C9EA5+54]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.orangehrm_hybrid_framework.testBase.TestBase.setUP(TestBase.java:47)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace351520508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace351520508'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=94.0.4606.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADVAIT-PC&apos;, ip: &apos;192.168.42.34&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C4B3C3+2470851]
+	Ordinal0 [0x00BE56A1+2053793]
+	Ordinal0 [0x00AF2438+1057848]
+	Ordinal0 [0x00AE5774+1005428]
+	Ordinal0 [0x00AE53B6+1004470]
+	Ordinal0 [0x00AE4AFA+1002234]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEE524+1041700]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEC4FA+1033466]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AEA319+1024793]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00AE963C+1021500]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE4716+1001238]
+	Ordinal0 [0x00AE3C8D+998541]
+	Ordinal0 [0x00AE3F46+999238]
+	Ordinal0 [0x00AE3835+997429]
+	Ordinal0 [0x00ADF41D+979997]
+	Ordinal0 [0x00AE37F1+997361]
+	Ordinal0 [0x00AE3590+996752]
+	Ordinal0 [0x00AE3329+996137]
+	Ordinal0 [0x00AF3650+1062480]
+	Ordinal0 [0x00B3AAAA+1354410]
+	Ordinal0 [0x00B3974A+1349450]
+	Ordinal0 [0x00B355AB+1332651]
+	Ordinal0 [0x00B12104+1188100]
+	Ordinal0 [0x00B12F59+1191769]
+	GetHandleVerifier [0x00DD1716+1549414]
+	GetHandleVerifier [0x00E7C207+2248535]
+	GetHandleVerifier [0x00CD676B+521403]
+	GetHandleVerifier [0x00CD5809+517465]
+	Ordinal0 [0x00BEA7DD+2074589]
+	Ordinal0 [0x00BEEB98+2091928]
+	Ordinal0 [0x00BEECD2+2092242]
+	Ordinal0 [0x00BF8581+2131329]
+	BaseThreadInitThunk [0x75E133CA+18]
+	RtlInitializeExceptionChain [0x770C9ED2+99]
+	RtlInitializeExceptionChain [0x770C9EA5+54]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.orangehrm_hybrid_framework.testBase.TestBase.setUP(TestBase.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.orangehrm_hybrid_framework.testCase.LoginTC@3427b02d</td></tr>
+</table><p>
+</body>
+</html>
