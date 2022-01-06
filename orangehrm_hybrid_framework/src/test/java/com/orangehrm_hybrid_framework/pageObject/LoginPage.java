@@ -28,7 +28,7 @@ public class LoginPage {
 	@FindBy(id = "btnLogin")
 	@CacheLookup
 	WebElement loginBtn;
-///hi all
+
 	public void setUserName(String uname) {
 		username.sendKeys(uname);
 	}
